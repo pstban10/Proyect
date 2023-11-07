@@ -1,0 +1,255 @@
+[
+# Creado por https://www.toptal.com/developers/gitignore/api/django,python,react
+# Editado en https://www.toptal.com/developers/gitignore?templates=django,python,react
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# Si tu proceso de construcción incluye ejecutar collectstatic, es posible que no necesites o desees incluir staticfiles/
+# en tu repositorio Git. Actualiza y descomenta la siguiente línea según corresponda.
+# <nombre-proyecto-django>/staticfiles/
+
+### Django.Python Stack ###
+# Archivos compilados en bytes / optimizados / de DLL
+*.py[cod]
+*$py.class
+
+# Extensiones C
+*.so
+
+# Distribución / empaquetado
+.Python
+# build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Por lo general, estos archivos son escritos por un script de Python a partir de una plantilla
+# antes de que PyInstaller construya el ejecutable, para inyectar información de fecha/otros en él.
+*.manifest
+*.spec
+
+# Registros de instalación
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Informes de pruebas unitarias / cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Traducciones
+*.mo
+
+# Cosas de Django:
+
+# Cosas de Flask:
+instance/
+.webassets-cache
+
+# Cosas de Scrapy:
+.scrapy
+
+# Documentación de Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Cuaderno Jupyter
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   Para una biblioteca o paquete, es posible que desees ignorar estos archivos, ya que el código está
+#   destinado a ejecutarse en múltiples entornos; de lo contrario, verifícalos en:
+# .python-version
+
+# pipenv
+#   Según pypa/pipenv#598, se recomienda incluir Pipfile.lock en el control de versiones.
+#   Sin embargo, en caso de colaboración, si tienes dependencias específicas de plataforma o dependencias
+#   que no tienen soporte multiplataforma, pipenv puede instalar dependencias que no funcionen o no
+#   instalar todas las dependencias necesarias.
+# Pipfile.lock
+
+# poetry
+#   Similar a Pipfile.lock, generalmente se recomienda incluir poetry.lock en el control de versiones.
+#   Esto es especialmente recomendado para paquetes binarios para garantizar la reproducibilidad y se ignora más
+#   comúnmente para bibliotecas.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+# poetry.lock
+
+# pdm
+#   Similar a Pipfile.lock, generalmente se recomienda incluir pdm.lock en el control de versiones.
+# pdm almacena configuraciones a nivel de proyecto en .pdm.toml, pero se recomienda no incluirlo
+# en el control de versiones.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; utilizado por ejemplo en github.com/David-OConnor/pyflow y github.com/pdm-project/pdm
+__pypackages__/
+
+# Cosas de Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Archivos analizados de SageMath
+*.sage.py
+
+# Entornos
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configuración del proyecto Spyder
+.spyderproject
+.spyproject
+
+# Configuración del proyecto Rope
+.ropeproject
+
+# Documentación de mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Comprobador de tipos estáticos Pyre
+.pyre/
+
+# Analizador de tipos estáticos pytype
+.pytype/
+
+# Símbolos de depuración de Cython
+cython_debug/
+
+# PyCharm
+# La plantilla específica de JetBrains se mantiene en un archivo JetBrains.gitignore aparte
+# que se encuentra en https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# y se puede agregar al gitignore global o fusionar en este archivo. Para una opción más radical
+# (no recomendada), puedes descomentar lo siguiente para ignorar toda la carpeta .idea.
+#.idea/
+
+### Python ###
+# Archivos compilados en bytes / optimizados / de DLL
+
+# Extensiones C
+
+# Distribución / empaquetado
+
+# PyInstaller
+# Por lo general, estos archivos son escritos por un script de Python a partir de una plantilla
+# antes de que PyInstaller construya el ejecutable, para inyectar información de fecha/otros en él.
+
+# Registros de instalación
+
+# Informes de pruebas unitarias / cobertura
+
+# Traducciones
+
+# Cosas de Django:
+
+# Cosas de Flask:
+
+# Cosas de Scrapy:
+
+# Documentación de Sphinx
+
+# PyBuilder
+
+# Cuaderno Jupyter
+
+# IPython
+
+# pyenv
+#   Para una biblioteca o paquete, es posible que desees ignorar estos archivos, ya que el código está
+#   destinado a ejecutarse en múltiples entornos; de lo contrario, verifícalos en:
+# .python-version
+
+# pipenv
+#   Según pypa/pipenv#598, se recomienda incluir Pipfile.lock en el control de versiones.
+#   Sin embargo, en caso de colaboración, si tienes dependencias específicas de plataforma o dependencias
+#   que no tienen soporte multiplataforma, pipenv puede instalar dependencias que no funcionen o no
+#   instalar todas las dependencias necesarias.
+
+# poetry
+#   Similar a Pipfile.lock, generalmente se recomienda incluir poetry.lock en el control de versiones.
+#   Esto es especialmente recomendado para paquetes binarios para garantizar la reproducibilidad y se ignora más
+#   comúnmente para bibliotecas.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+
+# pdm
+#   Similar a Pipfile.lock, generalmente se recomienda incluir pdm.lock en el control de versiones.
+# pdm almacena configuraciones a nivel de proyecto en .pdm.toml, pero se recomienda no incluirlo
+# en el control de versiones.
+# https://pdm.fming.dev/#use-with-ide
+# .pdm.toml
+
+### Python Patch ###
+# Archivo de configuración local de Poetry: https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+# ruff
+.ruff_cache/
+
+# Archivos de configuración LSP
+pyrightconfig.json
+
+### React ###
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+# Fin de https://www.toptal.com/developers/gitignore/api/django,python,react
+]
